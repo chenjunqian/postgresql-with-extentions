@@ -1,0 +1,1 @@
+docker run -d -p 5432:5432 -e POSTGRES_USER=jdmatcher -e POSTGRES_PASSWORD=qazxsw -e POSTGRES_DB=jdmatcherdb --name postgres17-with-extensions pg17-with-extensions
