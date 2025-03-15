@@ -1,0 +1,1 @@
+docker build -t pg17-with-extensions .

@@ -1,3 +1,5 @@
+-- Init script example for pg17-with-extensions
+
 CREATE EXTENSION vector;
 CREATE EXTENSION pgroonga;
 
