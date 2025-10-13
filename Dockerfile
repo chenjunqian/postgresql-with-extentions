@@ -18,6 +18,13 @@ RUN git clone --branch v0.7.0 https://github.com/pgvector/pgvector.git /tmp/pgve
     make install && \
     rm -rf /tmp/pgvector
 
+# install pgmq
+RUN git clone --branch v1.7.0 https://github.com/tembo-io/pgmq.git /tmp/pgmq && \
+    cd /tmp/pgmq/pgmq-extension && \
+    make && \
+    make install && \
+    rm -rf /tmp/pgmq
+
 # install pgroonga dependencies
 ENV PGROONGA_VERSION=4.0.1-1
 ENV POSTGRESQL_VERSION=17

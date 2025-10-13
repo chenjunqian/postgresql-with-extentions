@@ -2,6 +2,7 @@
 
 CREATE EXTENSION vector;
 CREATE EXTENSION pgroonga;
+CREATE EXTENSION pgmq;
 
 CREATE TABLE job_detail (
     id varchar(64) NOT NULL,
